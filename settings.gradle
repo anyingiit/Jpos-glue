@@ -1,0 +1,4 @@
+rootProject.name = 'code-0622'
+include 'device-mybrand-cashchanger'
+include 'comm-adapters:serial-bridge'
+include 'control-core'
