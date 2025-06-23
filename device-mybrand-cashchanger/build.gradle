@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example.device-mybrand-cashchanger'
+version = '1.0-SNAPSHOT'
+
+//repositories {
+//    mavenCentral()
+//}
+
+dependencies {
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+//    implementation project(':core')
+    implementation project(':comm-adapters:serial-bridge')
+    implementation project(':control-core')
+    implementation files('libs/javapos-1.14.1.jar')
+
+//    implementation 'org.javapos:jpos:1.14.1'
+}
+
+test {
+    useJUnitPlatform()
+}

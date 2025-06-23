@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example.bridge'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation files('libs/jSerialComm-2.11.0.jar')
+
+}
+//test {
+//    useJUnitPlatform()
+//}
