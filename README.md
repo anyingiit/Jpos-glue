@@ -1,5 +1,7 @@
 # Jpos-glue
 
+**English** · [简体中文](README.zh-CN.md)
+
 Clean-room JavaPOS cash-changer stack for brownfield devices (RS-232/TCP) on Linux. The design here comes from migrating 1,600+ payment terminals off a vendor-locked service into a layered, testable runtime that shipped five monthly releases with zero Sev-1 incidents. This repo keeps the architecture and patterns while scrubbing vendor specifics; `device-mybrand-cashchanger` is a drop-in style example.
 
 [![CI](https://github.com/anyingiit/Jpos-glue/actions/workflows/ci.yml/badge.svg)](https://github.com/anyingiit/Jpos-glue/actions/workflows/ci.yml)
