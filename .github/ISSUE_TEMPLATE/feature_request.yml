@@ -33,8 +33,6 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: >
-        Add any other context, links, or screenshots. If the request concerns a specific
-        device or protocol, say which one and what the protocol guarantees.
+      description: Add any other context, links, or screenshots.
     validations:
       required: false

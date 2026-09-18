@@ -6,11 +6,3 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-
-  # Gradle build files. Note that jSerialComm and JavaPOS are currently vendored
-  # as jars under */libs/; Dependabot cannot see those until they are declared as
-  # Maven coordinates in the build scripts.
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "weekly"

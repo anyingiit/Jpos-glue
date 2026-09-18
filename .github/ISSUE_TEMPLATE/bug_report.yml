@@ -8,21 +8,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug! Please search the existing issues first to avoid duplicates.
-
-        Do not report security vulnerabilities here — follow the [security policy](https://github.com/anyingiit/Jpos-glue/blob/master/SECURITY.md) instead.
-  - type: dropdown
-    id: module
-    attributes:
-      label: Module
-      description: Which part of the stack does the problem come from?
-      options:
-        - control-core
-        - comm-adapters/serial-bridge
-        - device-mybrand-cashchanger
-        - Build or CI
-        - Not sure
-    validations:
-      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -51,23 +36,9 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: JDK version, operating system, and how you build the project.
-      placeholder: |
-        - JDK: 17 (Temurin)
-        - OS: Ubuntu 24.04
-        - Build: ./gradlew build
+      description: Project version, operating system, and any other relevant details.
     validations:
       required: true
-  - type: textarea
-    id: device
-    attributes:
-      label: Device and transport
-      description: >
-        For communication problems: the device, the transport (RS-232 or TCP), and the
-        port settings you use (port name, baud rate, framing). A captured trace of the
-        exchange helps a lot.
-    validations:
-      required: false
   - type: textarea
     id: logs
     attributes:

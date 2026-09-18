@@ -10,10 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Open source repository files, tracking [Chef's Pick OSS Starter](https://github.com/anyingiit/chefs-pick-oss-starter) v1.1.0: code of conduct, contributing guide, security policy, issue forms, pull request template, changelog, release notes configuration, CI workflow, Dependabot configuration, and EditorConfig.
-- `README.zh-CN.md`: Simplified Chinese edition of the README, reached from a language selector at the top of `README.md`, following the English-first documentation convention introduced in the starter's v1.1.0. The English `README.md` remains the canonical version.
-- `control-core`: device state machine, retry/timeout policy, and service/control scaffolding.
-- `comm-adapters/serial-bridge`: jSerialComm transport adapter with ACK gating and framed reads.
-- `device-mybrand-cashchanger`: example device plugin wiring a codec, service, control, and bridge together.
+- Initial project structure.
 
-[Unreleased]: https://github.com/anyingiit/Jpos-glue/commits/master
+[Unreleased]: https://github.com/anyingiit/Jpos-glue/commits/main
