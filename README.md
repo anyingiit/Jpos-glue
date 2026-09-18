@@ -2,6 +2,11 @@
 
 Clean-room JavaPOS cash-changer stack for brownfield devices (RS-232/TCP) on Linux. The design here comes from migrating 1,600+ payment terminals off a vendor-locked service into a layered, testable runtime that shipped five monthly releases with zero Sev-1 incidents. This repo keeps the architecture and patterns while scrubbing vendor specifics; `device-mybrand-cashchanger` is a drop-in style example.
 
+[![CI](https://github.com/anyingiit/Jpos-glue/actions/workflows/ci.yml/badge.svg)](https://github.com/anyingiit/Jpos-glue/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/anyingiit/Jpos-glue)](LICENSE)
+
+[Report a bug](https://github.com/anyingiit/Jpos-glue/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/anyingiit/Jpos-glue/issues/new?template=feature_request.yml) · [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)
+
 ## Why this exists
 - Remove ambiguity in half-duplex serial comms (ENQ/response races) by using deterministic framing and explicit status commands instead of timing luck.
 - Isolate responsibilities: device state machine ↔ retry policy ↔ transport bridge ↔ codec ↔ control surface (JavaPOS).
@@ -62,3 +67,21 @@ control.smartDispense(5000);         // device-specific extension
 - Provide structured logging/metrics hooks (latency, retries, aborts, framing errors).
 - Publish artifacts to an internal Maven repo and document JavaPOS service.xml wiring.
 - Expand the sample to include TCP transport and a second device to illustrate multi-tenant deployments.
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for how to open an issue or a pull request, set up the build, and keep the module layering intact, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for the standards expected of everyone taking part.
+
+Please do not report security issues in public issues or pull requests. [SECURITY.md](SECURITY.md) explains how to report them privately.
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
+
+The vendored jars under `*/libs/` (`jSerialComm`, `javapos`) keep their own upstream licenses.
+
+## Contact
+
+Project link: [https://github.com/anyingiit/Jpos-glue](https://github.com/anyingiit/Jpos-glue)
