@@ -3,12 +3,22 @@
 
 ## Supported Versions
 
-Security updates are provided for the latest release only.
+This project has no tagged releases yet. Security fixes land on the `master` branch, which is the only supported version.
 
 | Version | Supported |
 | --- | --- |
-| Latest release | :white_check_mark: |
-| Older releases | :x: |
+| `master` | :white_check_mark: |
+| Older commits and forks | :x: |
+
+## Scope
+
+This repository is a clean-room skeleton for JavaPOS cash-changer integrations. Reports that are in scope include, for example:
+
+- Flaws in the device state machine, retry policy, or framing logic that let a malicious or malfunctioning device drive the host into an unsafe state (for example, a dispense that is retried after it already succeeded).
+- Unbounded reads, buffer handling, or parsing bugs in `SerialBridge` or a codec that a crafted device response can trigger.
+- Anything in this repository that leaks credentials, device secrets, or cardholder data.
+
+Vulnerabilities in the vendored third-party jars (`jSerialComm`, `javapos`) belong to their upstream projects, but please tell us anyway so the dependency can be updated here.
 
 ## Reporting a Vulnerability
 

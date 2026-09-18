@@ -7,8 +7,26 @@
 
 Closes #
 
+## Affected modules
+
+<!-- Tick everything this change touches. -->
+
+- [ ] `control-core` (state machine, retry policy, service/control scaffolding)
+- [ ] `comm-adapters/serial-bridge` (transport)
+- [ ] `device-mybrand-cashchanger` (example device plugin)
+- [ ] Build, CI, or docs
+
+## Protocol impact
+
+<!-- Delete this section if the change does not touch device communication. -->
+
+- Framing or codec changes:
+- Retry, timeout, or abort-byte changes:
+- Hardware or loopback testing performed:
+
 ## Checklist
 
-- [ ] Tests pass locally
+- [ ] `./gradlew build` passes locally
+- [ ] Tests added or updated for the change
 - [ ] `CHANGELOG.md` is updated (if applicable)
 - [ ] Documentation is updated (if applicable)

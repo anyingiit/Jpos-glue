@@ -13,3 +13,14 @@ trim_trailing_whitespace = false
 [*.{yml,yaml}]
 indent_style = space
 indent_size = 2
+
+[*.{java,gradle}]
+indent_style = space
+indent_size = 4
+
+[*.properties]
+indent_style = space
+indent_size = 4
+
+[gradlew.bat]
+end_of_line = crlf
